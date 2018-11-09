@@ -48,6 +48,7 @@ class Configuration implements ConfigurationInterface
                         ->booleanNode('headers')->defaultValue(true)->end()
                         ->booleanNode('body')->defaultValue(true)->end()
                         ->booleanNode('post_fields')->defaultValue(true)->end()
+                        ->booleanNode('soap_operation')->defaultValue(true)->end()
                     ->end()
                 ->end()
                 ->arrayNode('cassette')

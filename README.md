@@ -45,10 +45,11 @@ vcrvcr:
         headers: true
         body: true
         post_fields: true
+        soap_operation: true
     cassette:
-        type: json
+        type: yaml
         path: '%kernel.cache_dir%/vcr'
-        name: vcr
+        name: vcr.yml
 ```
 
 ## Credits
