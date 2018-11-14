@@ -40,7 +40,7 @@ public function registerBundles()
 
 ## Configuration reference
 
-Configure the bundle in your config_dev.yml (for example):
+Configure the bundle in your *config_dev.yml* (for example):
 
 ```yaml
 vcrvcr:
