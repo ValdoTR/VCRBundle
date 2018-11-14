@@ -1,7 +1,7 @@
 VCRBundle
 =========
 
-Integrates [php-vcr](https://github.com/php-vcr/php-vcr) into Symfony and its
+Integrates [php-vcr](https://github.com/moufmouf/php-vcr) into Symfony and its
 web profiler.
 
 <img src="https://cloud.githubusercontent.com/assets/66958/5232274/b841676e-774b-11e4-8f4e-1f3e8cb7739e.png" width="280" height="175" alt="PHP-VCR Symfony web profiler panel"/>
@@ -34,23 +34,25 @@ public function registerBundles()
 vcrvcr:
     enabled: true
     library_hooks:
-        stream_wrapper: false
-        curl: false
-        soap: false
+        stream_wrapper: true
+        curl: true
+        soap: true
     request_matchers:
         method: true
         url: true
         query_string: true
         host: true
-        headers: true
-        body: true
+        headers: false
+        body: false
         post_fields: true
         soap_operation: true
     cassette:
         type: yaml
-        path: '%kernel.cache_dir%/vcr'
+        path: <where_you_want_to_save_your_cassette>
         name: vcr.yml
 ```
+> Note: The cassette file must be versionned 
+
 
 ## Credits
 
