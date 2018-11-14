@@ -10,13 +10,24 @@ web profiler.
 
 ## Installation
 
-Require and install `php-vcr/vcr-bundle`:
+1. Add forked repository in *composer.json*:
+
+```php
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ValdoTR/VCRBundle.git"
+        }
+    ],
+``` 
+
+2. Require and install `php-vcr/vcr-bundle`:
 
 ```bash
 composer require --dev php-vcr/vcr-bundle "dev-master"
 ```
 
-And declare the bundle in your `app/AppKernel.php` file:
+3. Declare the bundle in your `app/AppKernel.php` file:
 
 ```php
 public function registerBundles()
@@ -28,6 +39,8 @@ public function registerBundles()
 ```
 
 ## Configuration reference
+
+Configure PHP-VCR in your config_dev.yml (for example):
 
 ```yaml
 vcrvcr:
