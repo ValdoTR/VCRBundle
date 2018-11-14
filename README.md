@@ -10,11 +10,10 @@ web profiler.
 
 ## Installation
 
-Install the behavior adding `php-vcr/vcr-bundle` to your composer.json or
-from CLI:
+Require and install `php-vcr/vcr-bundle`:
 
 ```bash
-php composer.phar require php-vcr/vcr-bundle
+composer require --dev php-vcr/vcr-bundle "dev-master"
 ```
 
 And declare the bundle in your `app/AppKernel.php` file:
